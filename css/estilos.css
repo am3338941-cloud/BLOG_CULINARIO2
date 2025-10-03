@@ -141,9 +141,17 @@ footer nav a:hover::after {
     width: 90%;
     margin: 1rem auto;
 }
+  @media (max-width: 768px) {
+  .logo {
+    margin: 0;
+    width: 70px; 
+  }
+}
   header {
     flex-wrap: wrap;
     justify-content: space-between;
+    height: auto;
+    flex-direction: column;
   }
 
   #menuToggle {
