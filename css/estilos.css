@@ -109,7 +109,12 @@ footer nav a:hover::after {
 }
 
 #menuToggle {
+  display: none;
+  background: none;
+  border: none;
   font-size: 28px;
+  color: white;
+  cursor: pointer;
 }
 
 .img, .img2 {
