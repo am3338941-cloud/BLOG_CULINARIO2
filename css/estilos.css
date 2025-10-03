@@ -1,0 +1,378 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-verde: #009246;         
+  --color-rojo: #CE2B37;          
+  --color-blanco: #FFFFFF;        
+  --color-verde-oscuro: #1B4332;  
+  --color-fondo: #F5F3F0;         
+  --color-gris: #eaeaea;
+  --fuente: "Poppins", sans-serif;
+}
+body.oscuro {
+  --color-fondo: #121212;
+  --color-verde: #006E3C;
+  --color-rojo: #A30800;
+  --color-verde-oscuro: #E0E0E0;  
+  --color-blanco: #2B2B2B;        
+  --color-gris: #1e1e1e;
+}
+.img, .img2 {
+  max-width: 30%;
+  height: auto;
+  border-radius: 30px;
+  border: 2px solid #6b8d65;
+  display: block;
+  margin: 1rem auto;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.img:hover, .img2:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+body {
+  font-family: var(--fuente);
+  background: var(--color-fondo);
+  color: var(--color-verde-oscuro);
+  transition: background 0.3s, color 0.3s;
+  line-height: 1.6;
+}
+h1, h2, h3 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.hh {
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 6vh;
+  font-family: "Poetsen One", sans-serif;
+  text-align: center;
+  margin-left: -30vh;
+}
+
+h5 {
+  font-weight: 800;
+}
+
+ul {
+  line-height: 4vh;
+}
+header {
+  position: sticky;
+  top: 0;
+  background: var(--color-verde);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  z-index: 10;
+  height: 100px;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+  margin-top: 60px;
+}
+
+header nav a,
+footer nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+}
+header nav {
+  display: flex;
+  gap: 1rem;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+}
+header nav a::after,
+footer nav a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -5px;
+  background: var(--color-rojo);
+  transition: width 0.3s;
+}
+
+header nav a:hover::after,
+footer nav a:hover::after {
+  width: 100%;
+}
+
+#modoOscuroBtn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+}
+
+#menuToggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .img, .img2 {
+    width: 90%;
+    margin: 1rem auto;
+}
+  header {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  #menuToggle {
+    display: block;
+  }
+
+  nav {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: var(--color-verde);
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+  }
+  header nav {
+    position: absolute;
+    top: 70px; 
+    left: 0;
+    width: 100%;
+    background: var(--color-verde);
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+  }
+  header nav.active {
+    max-height: 300px;
+  }
+
+  header nav a {
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+  }
+  nav.active {
+    max-height: 300px;
+  }
+
+  nav a {
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+  }
+}
+
+#hero {
+  background-image: url('../imagenes/fondo1.jpg');
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.hero-content {
+  z-index: 1;
+  position: relative;
+  animation: fadeIn 2s ease;
+  background: rgba(99, 94, 94, 0.65);
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--color-rojo);
+  color: var(--color-blanco);
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+  margin-top: 2rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.btn:hover {
+  background: var(--color-verde);
+  transform: scale(1.05);
+}
+#recetas {
+  padding: 2rem;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.tarjetas {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tarjeta {
+  background: var(--color-blanco);
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  overflow: hidden;
+  transition: transform 0.3s;
+  width: 300px;
+}
+
+.tarjeta:hover {
+  transform: translateY(-10px);
+}
+
+.tarjeta img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+#categorias {
+  padding: 2rem;
+  background: var(--color-verde);
+  color: white;
+  text-align: center;
+  min-height: 50vh;
+}
+
+.categorias-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.categoria {
+  background: rgba(255,255,255,0.15);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+#sobre-mi {
+  background: var(--color-gris);
+  padding: 2rem;
+  text-align: center;
+}
+
+.receta-detalle {
+  margin-left: 40vh;
+  min-height: 200vh;
+}
+
+.receta-detalle2 {
+  margin-left: 40vh;
+  min-height: 150vh;
+}
+
+#newsletter {
+  background: var(--color-rojo);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+#newsletter input {
+  padding: 0.7rem;
+  border: none;
+  border-radius: 5px;
+  width: 250px;
+}
+
+#newsletter button {
+  padding: 0.7rem 1.5rem;
+  border: none;
+  margin-left: 0.5rem;
+  border-radius: 5px;
+  background: var(--color-verde);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#newsletter button:hover {
+  background: white;
+  color: var(--color-verde);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #333;
+  color: white;
+  line-height: 3vh;
+}
+
+#btnInicio {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--color-verde);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50%;
+  font-size: 18px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+#btnInicio:hover {
+  background: var(--color-rojo);
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .tarjetas {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tarjeta {
+    width: 90%;
+  }
+}

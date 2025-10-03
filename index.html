@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Blog Culinario</title>
+  <link rel="icon" href="imagenes/logo.png">
+  <link rel="stylesheet" href="css/estilos.css">
+  <script ></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <div"><img src="imagenes/logo.png" alt="Logo" class="logo"> Mi Blog Culinario</div>
+     <button class="menu-toggle" id="menuToggle">☰</button>
+    <nav id="menuNav">
+      <a href="#hero">Inicio</a>
+      <a href="#recetas">Recetas</a>
+      <a href="#categorias">Categorías</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <br>
+    <button id="modoOscuroBtn">⚫</button>
+  </header>
+  <main>
+    <section id="hero">
+      <div class="hero-content">
+        <h1>SAPORI D'ITALIA: "RECETAS FÁCILES Y LLENAS DE SABOR"</h1>
+        <br>
+        <p>En este blog descubrirás recetas deliciosas de la gastronomía italiana:
+           Fáciles de preparar, pensadas para disfrutar en cualquier momento del día. Cada platillo 
+           que te compartimos tiene un toque especial que lo hace único, lleno de sabor y
+           carácter. ¡Prepárate para deleitar tu paladar y sorprender a quienes más quieres!</p>
+        <br>
+        <a href="#recetas" class="btn">Ver recetas</a>
+      </div>
+    </section>
+    <section id="recetas">
+      <br>
+      <br>
+      <br>
+      <h2>Recetas destacadas</h2>
+      <br>
+      <div class="tarjetas">
+        <article class="tarjeta">
+          <img src="imagenes/lasaña.jpg" alt="Lasaña italiana">
+          <h3>☆ Lasaña Italiana</h3>
+          <p>Tiempo: 40min  Dificultad: Media</p>
+          <a class="btn" href="lasaña.html">Ver receta</a>
+        </article>
+        <article class="tarjeta">
+          <img src="imagenes/spa.jpg" alt="Spaghetti a la boloñesa">
+          <h3>☆ Spaghetti a la Boloñesa</h3>
+          <p>Tiempo: 30min  Dificultad: Fácil</p>
+          <a class="btn" href="spaguetti.html">Ver receta</a>
+        </article>
+        <article class="tarjeta">
+          <img src="imagenes/papa.jpg" alt="Pastel de papa">
+          <h3>☆ Pastel de Papa</h3>
+          <p>Tiempo: 50min  Dificultad: Media</p>
+          <a class="btn" href="pastel.html">Ver receta</a>
+        </article>
+      </div>
+    </section>
+    <section id="categorias">
+      <br>
+      <br>
+      <br>
+      <h2>Categorías</h2>
+      <div class="categorias-grid">
+        <div class="categoria"><i class="fas fa-utensils"></i> Pastas (12)</div>
+        <div class="categoria"><i class="fas fa-hamburger"></i> Ensaladas (8)</div>
+        <div class="categoria"><i class="fas fa-ice-cream"></i> Bebidas (5)</div>
+        <div class="categoria"><i class="fas fa-coffee"></i> Postres (6)</div>
+      </div>
+    </section>
+    <section id="sobre-mi">
+      <br>
+      <br>
+      <br>
+      <h2>Sobre mí</h2>
+      <p>Me llamo Andrea, una persona que le encanta la cocina y busca compartir con todos mi pasión por 
+        ello. Cocinar me hace sentir muy bien, es una buena terapia y más cuando lo compartes con las
+        personas que quieres.</p>
+        <br>
+        <div class="social">
+        <a href="https://www.instagram.com/andreasalazar380?igsh=cWFxM3NmMzloOWtq"><i>Instagram</i></a>
+        <a href="https://www.facebook.com/share/1FQFB5WC7k/"><i>Facebook</i></a>
+        <a href="https://www.threads.com/@andreasalazar380"><i>Threads</i></a>
+      </div>
+    </section>
+    <section id="newsletter">
+      <h2>Suscríbete</h2>
+      <br>
+      <p>Recibe nuevas recetas en tu correo cada semana</p>
+      <br>
+      <form>
+        <input type="email" placeholder="Tu email" required>
+        <button type="submit">Suscribirme</button>
+      </form>
+    </section>
+  </main>
+  <footer id="contacto">
+    <br>
+      <h5>LA TAVOLA ITALIANA</h5>
+       Delizie Italiane
+      <br>
+      <br>
+      <div>
+        <h5>ENLACES RÁPIDOS </h5>
+        <nav>
+          <a href="#hero">Inicio  |</a>
+          <a href="#recetas">  Recetas  |</a>
+          <a href="#categorias">  Categorías  |</a>
+          <a href="#sobre-mi">  Sobre mí  |</a>
+          <a href="#contacto">  Contacto  |</a>
+        </nav>
+      </div>
+      <br>
+      <h5>CONTACTO</h5>
+      <ul>am3338941@gmail.com</ul>
+      <ul>7226440192</ul>
+      <ul>Roma-Italia</ul>
+    <br>
+    <p>&copy; 2025 LA TAVOLA ITALIANA | Andrea Mondragón Salazar</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
