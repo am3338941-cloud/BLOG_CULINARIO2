@@ -145,6 +145,7 @@ footer nav a:hover::after {
   .logo {
     margin: 0;
     width: 70px; 
+    margin-top:10px;
   }
 }
   header {
