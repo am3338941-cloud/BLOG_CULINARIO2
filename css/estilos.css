@@ -53,7 +53,6 @@ ul {
   line-height: 4vh;
 }
 
-/* HEADER */
 header {
   position: sticky;
   top: 0;
@@ -111,7 +110,6 @@ footer nav a:hover::after {
   font-size: 28px;
 }
 
-/* IMAGES */
 .img, .img2 {
   max-width: 30%;
   height: auto;
@@ -127,7 +125,6 @@ footer nav a:hover::after {
   box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
 
-/* HERO */
 #hero {
   background-image: url('../imagenes/fondo1.jpg');
   height: 100vh;
@@ -150,7 +147,6 @@ footer nav a:hover::after {
   font-size: 3rem;
 }
 
-/* BOTONES */
 .btn {
   display: inline-block;
   background: var(--color-rojo);
@@ -170,7 +166,6 @@ footer nav a:hover::after {
   transform: scale(1.05);
 }
 
-/* TARJETAS */
 #recetas {
   padding: 2rem;
   text-align: center;
@@ -203,7 +198,6 @@ footer nav a:hover::after {
   object-fit: cover;
 }
 
-/* CATEGORÍAS */
 #categorias {
   padding: 2rem;
   background: var(--color-verde);
@@ -225,14 +219,12 @@ footer nav a:hover::after {
   border-radius: 10px;
 }
 
-/* SOBRE MÍ */
 #sobre-mi {
   background: var(--color-gris);
   padding: 2rem;
   text-align: center;
 }
 
-/* DETALLE RECETAS */
 .receta-detalle {
   margin-left: 40vh;
   min-height: 200vh;
@@ -243,7 +235,6 @@ footer nav a:hover::after {
   min-height: 150vh;
 }
 
-/* NEWSLETTER */
 #newsletter {
   background: var(--color-rojo);
   color: white;
@@ -274,7 +265,6 @@ footer nav a:hover::after {
   color: var(--color-verde);
 }
 
-/* FOOTER */
 footer {
   text-align: center;
   padding: 1rem;
@@ -283,7 +273,6 @@ footer {
   line-height: 3vh;
 }
 
-/* BOTÓN INICIO */
 #btnInicio {
   position: fixed;
   bottom: 20px;
@@ -301,21 +290,18 @@ footer {
   background: var(--color-rojo);
 }
 
-/* ANIMACIONES */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* MEDIA QUERIES */
 @media (max-width: 768px) {
-  /* IMAGES */
+
   .img, .img2 {
     width: 90%;
     margin: 1rem auto;
   }
 
-  /* HEADER */
   header {
     flex-direction: column;
     align-items: center;
@@ -358,7 +344,6 @@ footer {
     margin: 0;
   }
 
-  /* TARJETAS */
   .tarjetas {
     flex-direction: column;
     align-items: center;
