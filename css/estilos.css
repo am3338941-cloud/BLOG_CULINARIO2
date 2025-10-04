@@ -172,16 +172,16 @@ footer nav a:hover::after {
 }
 
 #recetas {
-  padding: 2rem;
+  padding: 2rem 1rem;
   text-align: center;
-  min-height: 100vh;
+  min-height: auto;
 }
 
 .tarjetas {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
 }
 
 .tarjeta {
@@ -190,11 +190,8 @@ footer nav a:hover::after {
   box-shadow: 0 5px 10px rgba(0,0,0,0.15);
   overflow: hidden;
   transition: transform 0.3s;
-  width: 300px;
-}
-
-.tarjeta:hover {
-  transform: translateY(-10px);
+  width: 100%;
+  max-width: 300px;
 }
 
 .tarjeta img {
@@ -202,6 +199,7 @@ footer nav a:hover::after {
   height: 200px;
   object-fit: cover;
 }
+
 
 #categorias {
   padding: 2rem;
